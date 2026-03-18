@@ -1,0 +1,38 @@
+.key-info-card {
+  display: flex;
+  align-items: center;
+  background-color: #FBFBFB;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05); /* Ombre très légère */
+  width: 258px;
+  height: 124px;
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.card-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.card-text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #282D30;
+  margin-bottom: 2px;
+}
+
+.card-text p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #74798C;
+}

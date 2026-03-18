@@ -1,0 +1,30 @@
+.sessions-chart {
+  width: 100%;
+  height: 100%;
+  background: #FF0000;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sessions-chart h2 {
+  position: absolute;
+  top: 29px;
+  left: 34px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sessions-tooltip {
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.sessions-chart .recharts-responsive-container {
+  position: absolute;
+  bottom: 0;
+}
