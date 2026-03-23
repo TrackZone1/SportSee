@@ -28,3 +28,19 @@
   position: absolute;
   bottom: 0;
 }
+
+/* Responsiveness for 1024px minimum width */
+@media screen and (max-width: 1300px) {
+  .sessions-chart h2 {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .sessions-chart h2 {
+    top: 15px;
+    left: 15px;
+    font-size: 14px;
+  }
+}
