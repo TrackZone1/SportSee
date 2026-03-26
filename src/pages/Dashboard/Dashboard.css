@@ -1,142 +1,145 @@
 .dashboard-container {
-  padding: clamp(20px, 5vh, 68px) clamp(24px, 6vw, 109px);
-  max-width: 1440px;
-  margin: 0 auto;
-  height: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+    padding: clamp(20px, 5vh, 68px) clamp(24px, 6vw, 109px);
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 .dashboard-header {
-  margin-bottom: clamp(16px, 3vh, 40px);
+    margin-bottom: clamp(16px, 3vh, 40px);
 }
 
 .dashboard-header h1 {
-  font-size: 48px;
-  font-weight: 500;
-  color: #000000;
-  margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 20px;
 }
 
 .dashboard-header h1 span {
-  color: #FF0101;
+    color: #ff0101;
 }
 
 .dashboard-header p {
-  font-size: 18px;
-  font-weight: 400;
-  color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
 }
 
 .dashboard-content {
-  display: flex;
-  gap: clamp(12px, 2vw, 30px);
-  flex: 1;
-  min-height: 0;
+    display: flex;
+    gap: clamp(12px, 2vw, 30px);
+    flex: 1;
+    min-height: 0;
 }
 
 .dashboard-charts {
-  flex: 1;
-  display: grid;
-  grid-template-rows: minmax(0, 1fr) minmax(0, 0.82fr);
-  gap: clamp(12px, 2vh, 30px);
-  min-height: 0;
+    flex: 1;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) minmax(0, 0.82fr);
+    gap: clamp(12px, 2vh, 30px);
+    min-height: 0;
 }
 
 .main-chart {
-  min-height: 0;
-  background-color: #FBFBFB;
-  border-radius: 5px;
-  /* Composant à venir */
+    min-height: 0;
+    background-color: #fbfbfb;
+    border-radius: 5px;
+    /* Composant à venir */
 }
 
 .secondary-charts {
-  display: flex;
-  justify-content: space-between;
-  gap: clamp(12px, 2vw, 30px);
-  min-height: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(12px, 2vw, 30px);
+    min-height: 0;
 }
 
 .secondary-chart-box {
-  flex: 1;
-  background-color: #FBFBFB;
-  border-radius: 5px;
-  /* Composants à venir */
+    flex: 1;
+    background-color: #fbfbfb;
+    border-radius: 5px;
+    /* Composants à venir */
 }
 
 .dashboard-aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: clamp(12px, 2vh, 30px);
-  min-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: clamp(12px, 2vh, 30px);
+    min-height: 0;
 }
 
 .dashboard-aside .key-info-card {
-  flex: 1;
-  height: auto;
+    flex: 1;
+    height: auto;
 }
 
-.loading, .error {
-  padding: 68px 109px;
-  font-size: 24px;
-  color: #FF0101;
+.loading,
+.error {
+    padding: 68px 109px;
+    font-size: 24px;
+    color: #ff0101;
 }
 
 /* Responsiveness for 1024px minimum width */
 @media screen and (max-width: 1300px) {
-  .dashboard-container {
-    padding: 30px 40px;
-  }
-  .dashboard-content {
-    gap: 20px;
-  }
-  .dashboard-charts {
-    gap: 20px;
-  }
-  .secondary-charts {
-    gap: 20px;
-  }
-  .dashboard-aside {
-    gap: 20px;
-  }
-  .loading, .error {
-    padding: 30px 40px;
-  }
+    .dashboard-container {
+        padding: 30px 40px;
+    }
+    .dashboard-content {
+        gap: 20px;
+    }
+    .dashboard-charts {
+        gap: 20px;
+    }
+    .secondary-charts {
+        gap: 20px;
+    }
+    .dashboard-aside {
+        gap: 20px;
+    }
+    .loading,
+    .error {
+        padding: 30px 40px;
+    }
 }
 
 @media screen and (max-width: 1100px) {
-  .dashboard-container {
-    padding: 15px 20px;
-  }
-  .dashboard-header {
-    margin-bottom: 20px;
-  }
-  .dashboard-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
-  .dashboard-header p {
-    font-size: 16px;
-  }
-  .dashboard-content {
-    gap: 10px;
-  }
-  .dashboard-charts {
-    gap: 15px;
-  }
-  .main-chart {
-    height: 250px;
-  }
-  .secondary-charts {
-    gap: 15px;
-    height: 200px;
-  }
-  .dashboard-aside {
-    gap: 15px;
-  }
-  .loading, .error {
-    padding: 15px 20px;
-  }
+    .dashboard-container {
+        padding: 15px 20px;
+    }
+    .dashboard-header {
+        margin-bottom: 20px;
+    }
+    .dashboard-header h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    .dashboard-header p {
+        font-size: 16px;
+    }
+    .dashboard-content {
+        gap: 10px;
+    }
+    .dashboard-charts {
+        gap: 15px;
+    }
+    .main-chart {
+        height: 250px;
+    }
+    .secondary-charts {
+        gap: 15px;
+        height: 200px;
+    }
+    .dashboard-aside {
+        gap: 15px;
+    }
+    .loading,
+    .error {
+        padding: 15px 20px;
+    }
 }
