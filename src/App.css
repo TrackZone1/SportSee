@@ -1,10 +1,12 @@
 .app-main {
-  display: flex;
-  min-height: calc(100vh - 91px);
+    display: flex;
+    height: calc(100vh - 91px);
 }
 
 .app-content {
-  margin-left: 117px; /* width of the sidebar */
-  flex: 1;
-  background-color: #FBFBFB;
+    margin-left: 117px; /* width of the sidebar */
+    flex: 1;
+    background-color: #fbfbfb;
+    overflow-y: auto;
+    min-height: 0;
 }
